@@ -10,7 +10,7 @@ export default function ExplorePage() {
 
   useEffect(() => {
     socket.on('transaction', (txn) => {
-      setTransactions((prev) => [txn, ...prev.slice(0, 49)]); // limit to last 50
+      setTransactions((prev) => [txn, ...prev.slice(0, 49)]); 
     });
 
     axios.get('http://localhost:4000/api/transactions')
