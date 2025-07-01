@@ -40,11 +40,11 @@ setInterval(async () => {
 
   const newTxn = await Transaction.create(evaluated);
   io.emit('transaction', newTxn);
-}, 1000); // 1 per sec
+}, 1000); 
 
 const PORT = 4000;
 
 mongoose.connect(process.env.MONGO_URI!).then(() => {
-  console.log('✅ MongoDB connected');
-  server.listen(PORT, () => console.log(`🚀 Backend running on http://localhost:${PORT}`));
+  console.log(' MongoDB connected');
+  server.listen(PORT, () => console.log(` Backend running on http://localhost:${PORT}`));
 });
