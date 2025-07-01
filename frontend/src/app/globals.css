@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900 font-sans;
+}
+/* src/app/globals.css */
+body {
+  @apply bg-gradient-to-br from-[#f0f4ff] to-[#fefefe] text-gray-800;
+  font-family: 'Inter', sans-serif;
+}
+
